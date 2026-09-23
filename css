@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #12355B;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2,
+.students-box h2 {
+    color: #7b1113;
+    margin-bottom: 20px;
+}
+
+
+#studentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#studentForm label {
+    font-weight: bold;
+}
+
+#studentForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#studentForm button {
+    padding: 12px;
+    background: #12355B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.student-list {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 5px solid #12355B;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.student-card h3 {
+    color: #12355B;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    margin-bottom: 15px;
+}
+
+.remove-btn {
+    width: 100%;
+    padding: 10px;
+    background: #12355B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .student-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .student-list {
+        grid-template-columns: 1fr;
+    }
+
+}
